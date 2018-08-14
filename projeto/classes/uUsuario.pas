@@ -1,0 +1,62 @@
+unit uUsuario;
+
+interface
+
+uses
+    ActnList;
+
+ type
+    TUsuario = class
+    private
+        PNome_Usuario: String;
+        PId_Usuario: Integer;
+        PLogin_Usuario: String;
+        PSenha_Usuario: String;
+        PId_Perfil: Integer;
+    protected
+        function LoadPerfil: Boolean;
+    public
+        function Login(AUsuario, ASenha: String; Acoes: TCustomActionList): Boolean;
+        function GetPerfilNome: String;
+        function GetPerfilDescricao: String;
+        function MudarSenha(strOldPassword, strNewPassword: String): Boolean;
+    published
+        property Nome_Usuario: String read PNome_Usuario;
+        property Id_Usuario: Integer read PId_Usuario;
+        property Login_Usuario: String read PLogin_Usuario;
+        property Senha_Usuario: String read PSenha_Usuario;
+        property Id_Perfil: Integer read PId_Perfil;
+    end;
+
+implementation
+
+{ TUsuario }
+
+function TUsuario.GetPerfilDescricao: String;
+begin
+
+end;
+
+function TUsuario.GetPerfilNome: String;
+begin
+
+end;
+
+function TUsuario.LoadPerfil: Boolean;
+begin
+
+end;
+
+function TUsuario.Login(AUsuario, ASenha: String;
+  Acoes: TCustomActionList): Boolean;
+begin
+
+end;
+
+function TUsuario.MudarSenha(strOldPassword,
+  strNewPassword: String): Boolean;
+begin
+
+end;
+
+end.

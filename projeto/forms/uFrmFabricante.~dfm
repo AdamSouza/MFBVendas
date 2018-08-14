@@ -1,0 +1,26 @@
+inherited frmFabricante: TfrmFabricante
+  Caption = 'frmFabricante'
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited pgControl: TPageControl
+    inherited tabConsulta: TTabSheet
+      inherited DBGridRegistro: TDBGrid
+        Columns = <
+          item
+            Expanded = False
+            FieldName = 'ID_FABRICANTE'
+            Width = 96
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'NOME_FABRICANTE'
+            Visible = True
+          end>
+      end
+    end
+  end
+  inherited srcRegistro: TDataSource
+    DataSet = DM.cdsFabricante
+  end
+end
