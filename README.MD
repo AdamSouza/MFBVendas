@@ -1,4 +1,5 @@
 EFETUAR O DOWNLOAD DO REPOSITÓRIO (OU CLONAR) em C:\
+SQL DO BANCO SE ENCONTRA NA PASTA banco 
 
 OBS1: O usuário admin já vai cadastrado na base de dados com a senha 123 (Implementação futura para efetuar um cadastro de usuário de primeiro acesso com envio por email com login e senha);
 OBS2: Criei as tabelas de USUARIOS e PERFIL para enriquecer um pouco mais o sistema. A de PERFIL não ficou funcional a tempo. Implementação futura;
